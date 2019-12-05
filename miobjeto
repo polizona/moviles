@@ -7,7 +7,7 @@
 var texto = '{"miobjeto":{"numero":5, "cadena":"micadena", "metodo":"function() {metodo=memoria.miobjeto.numero*2; return metodo;}"} }';
 var memoria = JSON.parse(texto);
 memoria.miobjeto.metodo= eval("(" + memoria.miobjeto.metodo + ")");
-document.getElementById("resultado").innerHTML ="ejecución: "+  memoria.miobjeto.metodo() +"<br>"+"mi numero: "+  memoria.miobjeto.numero  ; 
+document.getElementById("resultado").innerHTML ="ejecución: "+memoria.miobjeto.metodo()+"<br>"+"mi numero: "+memoria.miobjeto.numero; 
 </script>
 resultado
 </body>
