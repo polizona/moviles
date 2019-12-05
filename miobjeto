@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h3>resultado_script</h3>
-<p id="resultado_script"></p>
+<h3>resultado</h3>
+<p id="resultado"></p>
 <script>
 var texto = '{"miobjeto":{"numero":5, "cadena":"micadena", "metodo":"function() {metodo=memoria.miobjeto.numero*2; return metodo;}"} }';
 var memoria = JSON.parse(texto);
 memoria.miobjeto.metodo= eval("(" + memoria.miobjeto.metodo + ")");
-document.getElementById("resultado_script").innerHTML ="ejecución: "+  memoria.miobjeto.metodo() +"<br>"+"mi numero: "+  memoria.miobjeto.numero  ; 
+document.getElementById("resultado").innerHTML ="ejecución: "+  memoria.miobjeto.metodo() +"<br>"+"mi numero: "+  memoria.miobjeto.numero  ; 
 </script>
-resultado_script
+resultado
 </body>
 </html>
