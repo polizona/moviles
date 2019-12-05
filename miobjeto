@@ -4,10 +4,10 @@
 <h3>resultado</h3>
 <p id="resultado"></p>
 <script>
-var texto = '{"miobjeto":{"numero":5, "cadena":"micadena", "metodo":"function() {metodo=memoria.miobjeto.numero*2; return metodo;}"} }';
+var texto = '{"miobjeto":{"numero":5, "cadena":"hola", "mimetodo":"function() {mimetodo=memoria.miobjeto.numero*2; return mimetodo;}"} }';
 var memoria = JSON.parse(texto);
-memoria.miobjeto.metodo= eval("(" + memoria.miobjeto.metodo + ")");
-document.getElementById("resultado").innerHTML ="ejecución: "+memoria.miobjeto.metodo()+"<br>"+"mi numero: "+memoria.miobjeto.numero; 
+memoria.miobjeto.mimetodo= eval("(" + memoria.miobjeto.mimetodo + ")");
+document.getElementById("resultado").innerHTML ="ejecución: "+memoria.miobjeto.mimetodo()+"<br>"+"mi numero: "+memoria.miobjeto.numero; 
 </script>
 resultado
 </body>
